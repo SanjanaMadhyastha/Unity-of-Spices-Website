@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gourmet Delight</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+      <nav class="navbar">
+        <div class="container">
+            <h1 >Unity of Spices</h1>
+            <ul class="nav-links">
+                <li><a href="#" data-page="home">Home</a></li>
+                <li><a href="#" data-page="about">About Us</a></li>
+                <li><a href="#" data-page="menu">Menu</a></li>
+                <li><a href="#" data-page="reserve">Reserve</a></li>
+                <li><a href="#" data-page="contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+<!-- Home Section -->
+   <section id="home" class="page">
+        <div class="hero">
+            <div class="hero-content">
+                <h2>Welcome to Unity of Spices.</h2>
+                <p>Savor the perfect blend of North and South Indian flavors with a touch of exotic flair.</p>
+                <a href="#" data-page="menu" class="btn">Explore Menu</a>
+            </div>
+        </div>
+    </section>
+ <!-- About Us Section -->
+    <section id="about" class="page" style="display: none;">
+        <h2>About Us</h2>
+        <div class="about-content">
+            <p>Unity of Spices brings together the rich culinary traditions of North and South India, creating a unique dining experience that celebrates diverse flavors. Founded by Sanjana Madhyastha our restaurant combines time-honored recipes with innovative twists, ensuring each dish is a journey through India's vibrant food culture. We are passionate about delivering exceptional meals and a warm, inviting atmosphere</p>
+            <img src="https://www.architectandinteriorsindia.com/cloud/2023/07/26/yqjVGsAX-DSC_3102-1200x888.jpg" alt="Restaurant Interior">
+        </div>
+    </section>
+<!-- Menu Section -->
+    <section id="menu" class="page" style="display: none;">
+        <h2>Our Menu</h2>
+        <h3>South Indian Dishes</h3>
+        <div class="menu-items">
+            <div class="menu-item">
+                <img src="images/dish1.jpg" alt="Idli Sambar">
+                <h3>Idli Sambar</h3>
+                <p>Steamed rice cakes served with a side of spicy sambar.</p>
+            </div>
+            <div class="menu-item">
+                <img src="images/dish2.jpg" alt=" Masala Dosa">
+                <h3>Dosa</h3>
+                <p>Crispy, golden crepes filled with a spicy potato mixture and served with chutneys..</p>
+            </div>
+            <div class="menu-item">
+                <img src="images/dish3.jpg" alt="kesari Bath">
+                <h3> South indian Meal</h3>
+                <p>A sweet, saffron-flavored semolina dessert, rich in ghee and garnished with nuts.</p>
+            </div>
+           
+            <div class="menu-item">
+                <img src="images/dish4.jpg" alt="Uttapam">
+                <h3>Uttapam</h3>
+                <p>Thick pancake-like dish topped with vegetables.</p>
+            </div>
+            <div class="menu-item">
+                <img src="images/dish5.jpg" alt="Mangluru Buns">
+                <h3>Mangaluru Buns</h3>
+                <p>Sweet, fluffy, and slightly tangy bread rolls from the coastal region of Karnataka.</p>
+            
+            </div>
+        </div>
+
+        <h3>North Indian Dishes</h3>
+        <div class="menu-items">
+            <div class="menu-item">
+                <img src="images/dish7.jpg" alt="North Indian Meal">
+                <h3>north indian meal</h3>
+                <p> A traditional platter featuring a variety of dishes, including rice, dal, curry, and roti.
+                </p>
+            </div>
+            <div class="menu-item">
+                <img src="images/dish8.jpg" alt="Paneer Tikka">
+                <h3>Paneer Tikka</h3>
+                <p>Grilled paneer marinated with spices and yogurt.</p>
+            </div>
+            <div class="menu-item">
+                <img src="images/dish9.jpg" alt="Chole Bhature">
+                <h3>Chole Bhature</h3>
+                <p>Spicy chickpeas served with deep-fried bread.</p>
+            </div>
+            <div class="menu-item">
+                <img src="images/dish10.jpg" alt="Dal Makhani">
+                <h3>Dal Makhani</h3>
+                <p>Rich and creamy lentil dish made with black gram.</p>
+            </div>
+            <div class="menu-item">
+                <img src="images/dish11.jpg" alt="Naan">
+                <h3>Naan</h3>
+                <p>Soft and fluffy flatbread baked in a tandoor oven.</p>
+            </div>
+        </div>
+<!-- Chef's Special Section --> 
+        <section id="special">
+            <h2>Chef's Special of the Day</h2>
+            <div class="special-content">
+                <img src="images/special-dish.jpg" alt="Chef's Special">
+                <div class="special-info">
+                    <h3>Spicy Garlic Shrimp</h3>
+                    <p>A mouth-watering dish featuring succulent shrimp sautéed with garlic, herbs, and spices.</p>
+                    <div class="countdown">
+                        <h4>Time left to enjoy today's special:</h4>
+                        <div id="timer"></div>
+                    </div>
+                    <a href="#" data-page="reserve" class="btn">Reserve Now</a>
+                </div>
+            </div>
+        </section>
+    </section>
+<!-- Reserve Section -->
+    <section id="reserve" class="page" style="display: none;">
+        <h2>Reserve a Table</h2>
+        <form>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="date">Reservation Date:</label>
+            <input type="date" id="date" name="date" required>
+
+            <label for="time">Reservation Time:</label>
+            <input type="time" id="time" name="time" required>
+
+            <label for="guests">Number of Guests:</label>
+            <input type="number" id="guests" name="guests" required>
+
+            <button type="submit" class="btn">Reserve Now</button>
+        </form>
+    </section>
+    <div id="reserveModal" class="modal">
+        <div class="modal-content">
+            <span class="close" id="closeReserve">&times;</span>
+            <p>Reservation successfully made!</p>
+        </div>
+    </div>
+ <!-- Contact Section -->
+    <section id="contact" class="page" style="display: none;">
+        <h2>Contact Us</h2>
+        <form>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
+
+            <button type="submit" class="btn">Send Message</button>
+        </form>
+    </section>
+    <div id="contactModal" class="modal">
+        <div class="modal-content">
+            <span class="close" id="closeContact">&times;</span>
+            <p>Your message has been sent!</p>
+        </div>
+    </div>
+
+<footer>
+        <p>&copy; 2024 Unity of Spices. All Rights Reserved.</p>
+    </footer>
+
+    <script src="script.js" defer></script>
+</body>
+</html>
+
+
+
+
